@@ -64,8 +64,8 @@ To handle the actual writing, the system utilizes the LangGraph `Send` API to si
 Once all parallel worker nodes have finished drafting, the graph funnels their output into the Reducer Subgraph, a specialized pipeline designed to finalize the draft through three sequential steps:
 
 1. **`merge_content`**: Sorts and concatenates the parallelized markdown sections together to form a single, cohesive Markdown document.
-2. **`decide_images`**: Analyzes the newly merged text to determine if visual aids (like technical diagrams or tables) would improve the reader's understanding. It limits output to a maximum of 3 images, inserts `[[IMAGE_X]]` placeholders directly into the markdown draft, and writes highly detailed prompt instructions (`ImageSpec` objects) for each visual.
-3. **`generate_and_place_images`**: Interfaces with the HuggingFace Inference API to call the `stable-diffusion-3.5-large` model. It physically generates the images, saves them locally to an `images/` directory, and replaces the temporary `[[IMAGE_X]]` placeholders with standard Markdown image links.
+2. **`decide_images`**: Analyzes the newly merged text to determine if visual aids (like technical diagrams or tables) would improve the reader's understanding images, inserts `[[IMAGE_X]]` placeholders directly into the markdown draft, and writes highly detailed prompt instructions (`ImageSpec` objects) for each visual.
+3. **`generate_and_place_images`**: Interfaces with the HuggingFace Inference API to call the model. It physically generates the images, saves them locally to an `images/` directory, and replaces the temporary `[[IMAGE_X]]` placeholders with standard Markdown image links.
 
 ---
 
@@ -84,3 +84,4 @@ To serve this complex execution graph to the frontend UI, the backend exposes cr
 **Aryan Vaghasiya** *Data Analyst & AI Engineer* | 📍 Surat, Gujarat, India  
 
 If you are a recruiter or engineering manager interested in a live technical demonstration of the private codebase or the LangGraph architecture, please feel free to reach out.
+
