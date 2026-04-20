@@ -8,7 +8,7 @@
 
 > 🔒 **Repository Notice:** The frontend and backend architectures of AetherDraft AI are maintained in a private repository. Due to the proprietary nature of this private command center, no actual source code is shown or publicly shared. This repository serves as the architectural blueprint and technical showcase of the project.
 
-![image alt](https://github.com/aryanvaghsiya11-a11y/AetherDraft-AI/blob/32f40f3e5f0215f4262be7a77381a2b85830208c/AetherDraftAi%20(2).png))
+![image alt](https://github.com/aryanvaghsiya11-a11y/AetherDraft-AI/blob/32f40f3e5f0215f4262be7a77381a2b85830208c/AetherDraftAi%20(2).png)
 
 ---
 
